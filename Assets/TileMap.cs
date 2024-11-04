@@ -99,7 +99,7 @@ public class TileMap : MonoBehaviour
             {
                 if (multidimensionalMap[i, j] == 1)
                 {
-                    if (CountNeighbouringCells(i, j, multidimensionalMap) > 2 || CountNeighbouringCells(i, j, multidimensionalMap) < 3) 
+                    if (CountNeighbouringCells(i, j, multidimensionalMap) < 2 || CountNeighbouringCells(i, j, multidimensionalMap) > 3) 
                         {
                         TempMap[i, j] = 0;   //The cell dies
                         }
